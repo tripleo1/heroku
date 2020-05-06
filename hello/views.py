@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from .models import Greeting
+from .models import *
 
 import requests
 
@@ -24,3 +24,12 @@ def db(request):
     greetings = Greeting.objects.all()
 
     return render(request, "db.html", {"greetings": greetings})
+
+from django.template import loader, Context
+from django.http import HttpResponse
+
+def archive(request):
+	posts = BlogPost.objects.all()
+	t = loader.get_template("archive.html")
+	c = { 'posts': posts }
+	return HttpResponse(t.render(c))
