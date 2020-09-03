@@ -7,7 +7,9 @@ This application supports the [Getting Started with Python on Heroku](https://de
 ## Running remotely
 
 Go to [https://morning-badlands-09854.herokuapp.com/](https://morning-badlands-09854.herokuapp.com/)
+
 Go to [https://morning-badlands-09854.herokuapp.com/db/](https://morning-badlands-09854.herokuapp.com/db/)
+
 Go to [https://morning-badlands-09854.herokuapp.com/blog/](https://morning-badlands-09854.herokuapp.com/blog/)
 
 ## Running Locally
